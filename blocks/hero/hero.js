@@ -1,16 +1,16 @@
 /**
  * Lincoln Hero Block
- * Full-screen hero with background image
+ * Matches lincoln.com design - no overlay, lower-left content
  */
 export default function decorate(block) {
   const div = block.querySelector('div');
   const picture = div.querySelector('picture');
   
-  // Set background image from picture element
+  // Set background image from picture element (NO overlay)
   if (picture) {
     const img = picture.querySelector('img');
     if (img && img.src) {
-      div.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${img.src}')`;
+      div.style.backgroundImage = `url('${img.src}')`;
     }
   }
   
