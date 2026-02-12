@@ -21,8 +21,8 @@
   --accent-color: #00274c;
 
   /* fonts - Lincoln typography */
-  --body-font-family: 'LincolnFont', 'Proxima Nova', -apple-system, system-ui, sans-serif;
-  --heading-font-family: 'LincolnSerif', 'Lincoln Miller', Georgia, serif;
+  --body-font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --heading-font-family: 'Lincoln Miller', Georgia, 'Times New Roman', serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -41,53 +41,19 @@
   --nav-height: 64px;
 }
 
-/* Lincoln fonts */
+/* Fallback fonts - using system fonts with Lincoln-like characteristics */
 @font-face {
-  font-family: 'LincolnFont';
-  src: url('https://www.lincoln.com/shared/fonts/LincolnFonts/ProximaNova/ProximaNova-Reg-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LincolnFont';
-  src: url('https://www.lincoln.com/shared/fonts/LincolnFonts/ProximaNova/ProximaNova-Light-webfont.woff') format('woff');
+  font-family: 'Proxima Nova Fallback';
+  src: local('Helvetica Neue'), local('Helvetica'), local('Arial');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'LincolnFont';
-  src: url('https://www.lincoln.com/shared/fonts/LincolnFonts/ProximaNova/ProximaNova-Sbold-webfont.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LincolnFont';
-  src: url('https://www.lincoln.com/shared/fonts/LincolnFonts/ProximaNova/ProximaNova-Bold-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LincolnSerif';
-  src: url('https://www.lincoln.com/shared/fonts/LincolnFonts/LincolnMiller/lincolnmillerb-semibold-webfont.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LincolnSerif';
-  src: url('https://www.lincoln.com/shared/fonts/LincolnFonts/LincolnMiller/LincolnMillerBWGL-Light.woff') format('woff');
+  font-family: 'Lincoln Miller Fallback';
+  src: local('Georgia'), local('Times New Roman'), local('Times');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @media (width >= 900px) {
